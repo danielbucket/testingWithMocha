@@ -2,9 +2,10 @@
 
 **testOne:**
 At this state we're essentially only running a test on an array that has been created within the test itself. This is the initial step in affiring that simply Mocha testing is set up and passing as is seen in './test/test.js'. Note that this does not include any assertion library.
-By default, Mocha will look for a 'test' directory where it expects to find the test files.
-mocha is the only dependency in package.json.
+By default, Mocha will look for a glob in the 'test' directory where it expects to find the test files.
+Mocha is the only dependency in package.json.
+Uses pre-ES5 syntax only, no transpiling is necessary at this point.
 
-
-
-**testTwo:** dirp a dirp dirp
+**testTwo:**
+testTwo utilizes the import and export.
+http://jamesknelson.com/testing-in-es6-with-mocha-and-babel-6/
