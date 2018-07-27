@@ -1,17 +1,17 @@
 const assert = require('assert');
-const testOne = require('../testOne/testone.js');
+const moduleOne = require('../moduleOne/moduleOne.js');
 
-import testTwo from '../testTwo/testTwo';
+import moduleTwo from '../moduleTwo/moduleTwo.js';
 // using the import keyword with Mocha you must first transpile
 
-describe('testOne', function() {
+describe('moduleOne', function() {
 	it('01: should add numbers', function() {
-		assert.equal(testOne(-275,279), 4)
+		assert.equal(moduleOne(-275,279), 4)
 	})
 });
 
-describe('testTwo', () => {
+describe('moduleTwo', () => {
 	it('01: should multiply numbers', () => {
-		assert.equal(testTwo(5,5), 25)
+		assert.equal(moduleTwo(5,5), 25)
 	})
 });
