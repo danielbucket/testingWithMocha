@@ -1,10 +1,11 @@
 const assert = require('assert');
-const addNumbers = require('../someFunction');
 
-describe('Array', () => {
-	describe('someFunc', () => {
-		it('should add numbers', () => {
-			assert.equal(addNumbers(1,3), 4)
-		})
-	});
+describe('Array', function() {
+  describe('#indexOf()', function() {
+    it('should return -1 when the value is not present', function() {
+      assert.equal([1,2,3].indexOf(4), -1);
+    });
+  });
 });
+
+// This example was copied directly from https://mochajs.org/#assertions
