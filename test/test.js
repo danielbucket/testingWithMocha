@@ -1,7 +1,7 @@
 const assert = require('assert');
 const moduleOne = require('../moduleOne/moduleOne.js');
 
-import moduleTwo from '../moduleTwo/moduleTwo.js';
+import { moduleTwo } from '../moduleTwo/moduleTwo.js';
 // to use the import statements with Mocha you must first
 // transpile the code using Babel
 

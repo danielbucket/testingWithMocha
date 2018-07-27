@@ -1,3 +1,1 @@
-const moduleTwo = (num1,num2) => num1 * num2;
-
-export default moduleTwo;
+export const moduleTwo = (num1,num2) => num1 * num2;
