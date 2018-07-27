@@ -1,10 +1,10 @@
 const assert = require('assert');
-const addNumbers = require('../someFunction');
+const addNumbers = require('../testOne.js');
 
-describe('Array', () => {
-	describe('someFunc', () => {
-		it('should add numbers', () => {
-			assert.equal(addNumbers(1,3), 4)
+describe('testOne', function() {
+	describe('testOne', function() {
+		it('should add numbers', function() {
+			assert.equal(addNumbers(-275,279), 4)
 		})
 	});
 });
