@@ -1,3 +1,5 @@
-const testOne = (num1,num2) => num1 + num2;
+function addNumbers(num1,num2) {
+	return num1 + num2;
+};
 
-export default testOne;
+module.exports = addNumbers;
