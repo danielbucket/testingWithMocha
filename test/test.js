@@ -1,8 +1,8 @@
 const assert = require('assert');
-const testOne = require('../testOne.js');
+const moduleOne = require('../moduleOne/moduleOne.js');
 
-describe('testOne', function() {
+describe('moduleOne', function() {
 	it('should add numbers', function() {
-		assert.equal(testOne(-275,279), 4)
-	})
+		assert.equal(moduleOne(-275,279), 4)
+	});
 });
