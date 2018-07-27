@@ -5,7 +5,3 @@ At this state we're essentially only running a test on an array that has been cr
 By default, Mocha will look for a glob in the 'test' directory where it expects to find the test files.
 Mocha is the only dependency in package.json.
 Uses pre-ES5 syntax only, no transpiling is necessary at this point.
-
-**testTwo:**
-testTwo utilizes the import and export.
-http://jamesknelson.com/testing-in-es6-with-mocha-and-babel-6/
