@@ -7,17 +7,13 @@ module.exports = {
 	],
 
 	module: {
-		loaders: [
+		rules: [
 			{
-				loader: "babel-loader",
+				test: /\.jsx?/,
 				include: [ path.resolve(__dirname, "src") ],
-				// using 'include' here instead of 'exclude'
-				// specifies that ONLY the src directory is evaluated.
-
-				test: /\jsx?/,
-				query: {
-					plugins: [ 'transform-runtime' ],
-					presets: [ 'es2015' ]
+				loader: "babel-loader",
+				options: {
+					presets: [ "es2015" ]
 				}
 			}
 		]

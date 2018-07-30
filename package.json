@@ -1,7 +1,7 @@
 {
 	"scripts": {
-		"test": "mocha --compilers js:babel-core/register",
-		"build": "webpack"
+		"build": "webpack",
+		"test": "npm run build && mocha --require babel-core/register"
 	},
 	"devDependencies": {
 		"babel-core": "^6.26.3",

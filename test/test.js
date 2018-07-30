@@ -1,13 +1,13 @@
 const assert = require('assert');
 const expect = require('chai').expect;
 
-const moduleOne = require('../01_moduleOne/moduleOne.js');
+const moduleOne = require('../src/01_moduleOne/moduleOne.js');
 
-import { moduleTwo } from '../02_moduleTwo/moduleTwo.js';
+import { moduleTwo } from '../src/02_moduleTwo/moduleTwo.js';
 // to use the import statements with Mocha you must first
 // transpile the code using Babel
 
-import combineModules from '../03_moduleThree/moduleThree';
+import combineModules from '../src/03_moduleThree/moduleThree';
 
 describe('moduleOne', function() {
 	it('01: should add numbers', function() {
