@@ -1,5 +1,5 @@
 const assert = require('assert');
-const expect = require('chai').expect;
+const { expect } = require('chai');
 
 const moduleOne = require('../src/01_moduleOne/moduleOne.js');
 
