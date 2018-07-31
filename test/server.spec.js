@@ -9,13 +9,11 @@ chai.use(chaiHTTP);
 
 describe('server', () => {
 
-	it('should respond', (done) => {
+	it('should respond', () => {
 		chai.request(server)
 		.get('/')
 		.end((err,res) => {
 			res.should.have.status(200);
-
-			done();
 		});
 	});
 });
