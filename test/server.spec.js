@@ -7,12 +7,9 @@ const server = require('../server/server');
 chai.use(chaiHTTP);
 
 describe('server', () => {
-
 	it('should respond', () => {
 		chai.request(server)
 		.get('/')
-		.end((err,res) => {
-			res.should.have.status(200);
-		});
+		.end((err,res) => res.should.have.status(200));
 	});
 });
